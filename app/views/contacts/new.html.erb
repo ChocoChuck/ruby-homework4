@@ -1,0 +1,10 @@
+<h1>Create a contact</h1>
+
+<%= form_for(@contact) do |f| %>
+  <p><%= f.text_field(:name, placeholder: 'Name of contact goes here') %></p>
+  <p><%= f.text_field(:email, placeholder: 'Email of contact') %></p>
+  <p><%= f.text_area(:message, placeholder: 'How you remember the contact') %></p>
+
+  <p><%= f.submit %></p>
+
+  <% end %>

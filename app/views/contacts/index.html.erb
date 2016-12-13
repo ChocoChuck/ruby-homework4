@@ -1,0 +1,13 @@
+
+<p>Number of Contacts: <%= number_with_delimiter(@contacts.count) %></p>
+
+<% @contacts.each do |contact| %>
+  <h2>Title: <%= contact.name %> </h2>
+  <p>Email: <%= contact.email %></p>
+<% end %>
+
+
+<p><%= link_to('Create a contact', new_contact_path)%></p>
+
+<p><%= link_to('Contacts page', yourContacts_path) %></p>
+
